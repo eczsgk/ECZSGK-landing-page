@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#02983E" />
+  <meta name="description" content="ECZSGK — Eczaneler için akıllı SGK ve MEDULA reçete kontrol yardımcısı." />
+  <title>ECZSGK | Akıllı SGK & MEDULA Kontrol Platformu</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand" aria-label="ECZSGK Ana Sayfa">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 56 56" role="img">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#16c766"/>
+                <stop offset="100%" stop-color="#02983E"/>
+              </linearGradient>
+            </defs>
+            <path d="M28 3.5 47 10v15.6c0 12.3-7.6 21.6-19 27-11.4-5.4-19-14.7-19-27V10L28 3.5Z" fill="url(#g1)"/>
+            <rect x="24" y="14" width="8" height="28" rx="2.4" fill="#fff"/>
+            <rect x="14" y="24" width="28" height="8" rx="2.4" fill="#fff"/>
+          </svg>
+        </span>
+        <span class="brand-text">ECZ<span>SGK</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Ana menü">
+        <a href="#features">Özellikler</a>
+        <a href="#workflow">Nasıl Çalışır?</a>
+        <a href="#smart-control">Akıllı Kontrol</a>
+        <a href="#sgk-control">SGK Kontrol</a>
+        <a href="#renewal">Yenileme Takibi</a>
+        <a href="#security">Güvenlik</a>
+        <a href="#pricing">Fiyatlandırma</a>
+        <a href="#faq">SSS</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary desktop-only demo-trigger" type="button">Demo Al</button>
+        <button class="menu-btn" id="menuBtn" aria-label="Menüyü aç" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#features">Özellikler</a>
+      <a href="#workflow">Nasıl Çalışır?</a>
+      <a href="#smart-control">Akıllı Kontrol</a>
+      <a href="#sgk-control">SGK Kontrol</a>
+      <a href="#renewal">Yenileme Takibi</a>
+      <a href="#security">Güvenlik</a>
+      <a href="#pricing">Fiyatlandırma</a>
+      <a href="#faq">SSS</a>
+      <button class="btn btn-primary demo-trigger" type="button">Demo Al</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            ECZANELER İÇİN AKILLI SGK KONTROL PLATFORMU
+          </div>
+
+          <h1>
+            SGK Kontrolünü
+            <span class="gradient-text">Daha Sistematik Hale Getirin.</span>
+          </h1>
+
+          <p class="hero-sub">
+            ECZSGK; reçete, ilaç bilgisi, rapor, uzmanlık, yenileme tarihi ve hasta geçmişi gibi kritik verileri tek merkezde değerlendirmenize yardımcı olur.
+          </p>
+
+          <div class="hero-actions">
+            <button type="button" class="btn btn-primary btn-lg demo-trigger">
+              Demo Al
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+            <a href="#workflow" class="btn btn-glass btn-lg">
+              <span class="play-icon">▶</span>
+              Nasıl Çalıştığını Gör
+            </a>
+          </div>
+
+          <div class="trust-line">
+            <span class="trust-check">✓</span>
+            Eczane iş akışına ve MEDULA pratiklerine uygun çalışma yapısı.
+          </div>
+          <div class="hero-micro-triggers">
+            <span>✓ Kredi kartı gerekmez</span>
+            <span>✓ Kurulum akışı yaklaşık 3 dakika</span>
+            <span>✓ Demo talebi 30 saniye</span>
+          </div>
+          <div class="support-availability">Bu haftaki ücretsiz canlı kurulum ve teknik destek kontenjanı için <a href="https://wa.me/905387883600?text=Merhaba%2C%20bu%20haftaki%20ECZSGK%20canl%C4%B1%20kurulum%20kontenjan%C4%B1n%C4%B1%20%C3%B6%C4%9Frenmek%20istiyorum." target="_blank" rel="noopener">güncel durumu sorun</a>.</div>
+
+          <div class="hero-mini-stats">
+            <div>
+              <strong>Tek Merkez</strong>
+              <span>Reçete + Rapor + İlaç</span>
+            </div>
+            <div>
+              <strong>Şeffaf Durum</strong>
+              <span>Uygun / Uyarı / Veri Bekliyor</span>
+            </div>
+            <div>
+              <strong>Akıllı Takip</strong>
+              <span>Yenileme ve geçmiş</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-showcase reveal delay-1">
+          <div class="showcase-orbit orbit-one"></div>
+          <div class="showcase-orbit orbit-two"></div>
+
+          <div class="app-window">
+            <div class="app-topbar">
+              <div class="window-controls">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="topbar-title">
+                <div class="mini-logo">E</div>
+                <div>
+                  <strong>Akıllı Kontrol Merkezi</strong>
+                  <small>ECZSGK Core Engine</small>
+                </div>
+              </div>
+              <div class="live-status">
+                <span class="pulse-dot"></span>
+                Aktif Tarama Yapılıyor
+              </div>
+            </div>
+
+            <div class="app-body">
+              <aside class="app-sidebar">
+                <div class="side-logo">ECZ</div>
+                <button class="side-item active" aria-label="Ana panel">⌂</button>
+                <button class="side-item" aria-label="Kontrol">✓</button>
+                <button class="side-item" aria-label="Rapor">▤</button>
+                <button class="side-item" aria-label="İlaç">✚</button>
+                <button class="side-item" aria-label="Ayarlar">⚙</button>
+              </aside>
+
+              <div class="app-main">
+                <div class="group-tabs">
+                  <button class="tab active">Tümü</button>
+                  <button class="tab">A Grubu</button>
+                  <button class="tab">C Grubu</button>
+                  <button class="tab">Geçici / ASHB</button>
+                </div>
+
+                <div class="metrics-grid">
+                  <div class="metric-card">
+                    <div class="metric-label">Toplam Reçete</div>
+                    <div class="metric-value">42</div>
+                    <div class="metric-foot">Seçili gruplar</div>
+                  </div>
+                  <div class="metric-card">
+                    <div class="metric-label">Kontrol Edilen</div>
+                    <div class="metric-value green">17</div>
+                    <div class="metric-foot">İşlem devam ediyor</div>
+                  </div>
+                  <div class="metric-card">
+                    <div class="metric-label">Uyarı</div>
+                    <div class="metric-value amber">3</div>
+                    <div class="metric-foot">Kontrol önerilir</div>
+                  </div>
+                  <div class="metric-card">
+                    <div class="metric-label">Tamamlanan</div>
+                    <div class="metric-value indigo">14</div>
+                    <div class="metric-foot">Sonuçlandırıldı</div>
+                  </div>
+                </div>
+
+                <div class="processing-card">
+                  <div class="processing-head">
+                    <div>
+                      <span class="micro-label">CANLI İŞLEM</span>
+                      <strong>17 / 42 Reçete Kontrol Ediliyor</strong>
+                    </div>
+                    <span class="percent" id="heroPercent">40%</span>
+                  </div>
+                  <div class="progress-shell">
+                    <div class="progress-bar hero-progress" style="width:40%"></div>
+                  </div>
+                  <div class="status-feed">
+                    <span class="scan-icon">⌁</span>
+                    <span id="statusFeed">Hasta bilgileri okunuyor...</span>
+                  </div>
+                </div>
+
+                <div class="mini-result-grid">
+                  <div class="rx-card">
+                    <div class="avatar">AY</div>
+                    <div>
+                      <strong>Ayşe Yılmaz</strong>
+                      <small>Reçete #RX-10284</small>
+                    </div>
+                    <span class="status-pill success">UYGUN</span>
+                  </div>
+                  <div class="rx-card">
+                    <div class="avatar">MD</div>
+                    <div>
+                      <strong>Mehmet Demir</strong>
+                      <small>Reçete #RX-10285</small>
+                    </div>
+                    <span class="status-pill warning">UYARI</span>
+                  </div>
+                  <div class="rx-card">
+                    <div class="avatar">FK</div>
+                    <div>
+                      <strong>Fatma Kaya</strong>
+                      <small>Reçete #RX-10286</small>
+                    </div>
+                    <span class="status-pill waiting">VERİ BEKLİYOR</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-badge floating-badge-one">
+            <span>✓</span>
+            <div><strong>Şeffaf Sonuç</strong><small>Eksik veri gizlenmez</small></div>
+          </div>
+          <div class="floating-badge floating-badge-two">
+            <span>↻</span>
+            <div><strong>Yenileme Takibi</strong><small>Verilebileceği tarihten</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="proof-strip" aria-label="ECZSGK kullanım göstergeleri">
+      <div class="container proof-grid">
+        <article class="proof-stat reveal">
+          <strong><span class="counter" data-target="680">0</span>+</strong>
+          <span>Aktif Eczane</span>
+          <small>Türkiye genelinde 680'den fazla eczane SGK kontrollerini ECZSGK ile yönetiyor.</small>
+        </article>
+        <article class="proof-stat reveal delay-1">
+          <strong><span class="counter" data-target="2900">0</span>+</strong>
+          <span>Tespit Edilen Risk / Hata</span>
+          <small>Bugüne kadar 2.900'den fazla SGK kesinti riski ve rapor hatası tespit edildi.</small>
+        </article>
+        <article class="proof-stat reveal delay-2">
+          <strong><span class="counter" data-target="12">0</span> saat</strong>
+          <span>Haftalık Zaman Tasarrufu</span>
+          <small>Eczane başına haftalık ortalama 12 saat manuel kontrol süresi tasarrufu.</small>
+        </article>
+        <article class="proof-stat reveal delay-3">
+          <strong><span class="counter" data-target="14500">0</span>+</strong>
+          <span>Son 24 Saatte Analiz</span>
+          <small>Son 24 saatte 14.500+ reçete ve ilaç geçmişi analiz akışından geçti.</small>
+        </article>
+      </div>
+    </section>
+
+    <div class="trust-ticker" aria-label="ECZSGK güven göstergeleri">
+      <div class="ticker-track">
+        <span>680+ Aktif Eczane</span><i>•</i>
+        <span>2.900+ Yakalanan Risk / Hata</span><i>•</i>
+        <span>MEDULA &amp; SUT Odaklı Kontrol Akışı</span><i>•</i>
+        <span>Şeffaf Sonuç Mantığı</span><i>•</i>
+        <span>Yenileme Takibi</span><i>•</i>
+        <span>680+ Aktif Eczane</span><i>•</i>
+        <span>2.900+ Yakalanan Risk / Hata</span><i>•</i>
+        <span>MEDULA &amp; SUT Odaklı Kontrol Akışı</span><i>•</i>
+        <span>Şeffaf Sonuç Mantığı</span><i>•</i>
+        <span>Yenileme Takibi</span><i>•</i>
+      </div>
+    </div>
+
+    <section class="section section-soft" id="features">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="section-kicker">SORUNU SADELEŞTİRİN</span>
+          <h2>SGK Kontrolünde Küçük Bir Detay, Büyük Bir İş Yüküne Dönüşebilir.</h2>
+          <p>Reçete kontrolünde farklı MEDULA ekranları, rapor bilgileri, uzmanlık şartları, ilaç geçmişleri ve yenileme tarihleri arasında sürekli geçiş yapmak hem zaman hem dikkat gerektirir.</p>
+        </div>
+
+        <div class="pain-grid">
+          <article class="pain-card reveal">
+            <div class="icon-box">▦</div>
+            <h3>Dağınık Bilgi</h3>
+            <p>Gerekli verilerin farklı ekran ve sekmelerde bulunması süreci yavaşlatır.</p>
+          </article>
+          <article class="pain-card reveal delay-1">
+            <div class="icon-box">⌨</div>
+            <h3>Manuel Kontrol</h3>
+            <p>Her reçetenin tek tek elle değerlendirilmesi insan hatası riskini artırır.</p>
+          </article>
+          <article class="pain-card reveal delay-2">
+            <div class="icon-box">◷</div>
+            <h3>Rapor Takibi</h3>
+            <p>Başlangıç, bitiş ve yenileme tarihlerinin manuel takibi zaman kaybına yol açar.</p>
+          </article>
+          <article class="pain-card reveal delay-3">
+            <div class="icon-box">≋</div>
+            <h3>SUT Kuralları</h3>
+            <p>Kontrol sırasında çok sayıda kuralın eşzamanlı değerlendirilmesi gerekir.</p>
+          </article>
+        </div>
+
+        <div class="bridge-banner reveal">
+          <div class="bridge-icon">✦</div>
+          <p><strong>ECZSGK</strong> tüm bu karmaşık süreci tek bir akıllı çalışma merkezinde birleştirir.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="workflow">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">MERKEZİ İŞLEME MANTIĞI</span>
+          <h2>Bir Reçete. Tek Veri Toplama. Birden Fazla Akıllı Kontrol.</h2>
+          <p>ECZSGK aynı reçete için verileri tekrar tekrar toplamak yerine, merkezi bir işleme mantığıyla hareket eder.</p>
+        </div>
+
+        <div class="workflow-shell reveal">
+          <div class="workflow-line"></div>
+          <div class="workflow-step active">
+            <span class="step-number">01</span>
+            <div class="step-icon">▤</div>
+            <h3>Reçete Açılır</h3>
+            <p>Seçili reçete güvenli işlem kuyruğuna alınır.</p>
+          </div>
+          <div class="workflow-step">
+            <span class="step-number">02</span>
+            <div class="step-icon">✚</div>
+            <h3>İlaç Bilgileri Okunur</h3>
+            <p>İlaç ve etken madde bilgileri tek akışta toplanır.</p>
+          </div>
+          <div class="workflow-step">
+            <span class="step-number">03</span>
+            <div class="step-icon">▧</div>
+            <h3>Rapor İncelenir</h3>
+            <p>Gereken rapor bilgileri ve uzmanlık koşulları değerlendirilir.</p>
+          </div>
+          <div class="workflow-step">
+            <span class="step-number">04</span>
+            <div class="step-icon">◴</div>
+            <h3>Geçmiş Değerlendirilir</h3>
+            <p>İlaç ve tedavi geçmişi üzerinden tarih bilgileri ele alınır.</p>
+          </div>
+          <div class="workflow-step">
+            <span class="step-number">05</span>
+            <div class="step-icon">✓</div>
+            <h3>Sonuç Oluşur</h3>
+            <p>Kontrol sonucu şeffaf durum etiketleriyle üretilir.</p>
+          </div>
+          <div class="workflow-step">
+            <span class="step-number">06</span>
+            <div class="step-icon">⇢</div>
+            <h3>Merkezlere Dağıtılır</h3>
+            <p>Veriler ilgili kontrol, rapor ve yenileme ekranlarına aktarılır.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="smart-control">
+      <div class="dark-glow"></div>
+      <div class="container module-grid">
+        <div class="module-copy reveal">
+          <span class="section-kicker kicker-light">AKILLI KONTROL MERKEZİ</span>
+          <h2>Reçeteleri Tek Bir Merkezden İzleyin.</h2>
+          <p>Seçili grupları tek ekrandan yönetin. Hangi reçetenin hangi aşamada olduğunu, hangi verinin okunduğunu ve hangi kontrolün tamamlandığını canlı olarak görün.</p>
+
+          <div class="check-list">
+            <div><span>✓</span> A Grubu, C Grubu ve Geçici / ASHB filtreleri</div>
+            <div><span>✓</span> Sıralı ve kontrollü reçete işleme</div>
+            <div><span>✓</span> Canlı durum ve ilerleme görünümü</div>
+            <div><span>✓</span> Sonuçların ilgili merkezlere aktarılması</div>
+          </div>
+        </div>
+
+        <div class="control-panel reveal delay-1">
+          <div class="control-tabs">
+            <button class="active">Tümü <small>A + C + Geçici</small></button>
+            <button>A Grubu</button>
+            <button>C Grubu</button>
+            <button>Geçici / ASHB</button>
+          </div>
+
+          <div class="control-progress">
+            <div class="control-progress-head">
+              <div>
+                <span class="green-dot"></span>
+                <strong>17 / 42 Reçete Kontrol Ediliyor</strong>
+              </div>
+              <strong>40%</strong>
+            </div>
+            <div class="progress-shell dark-shell">
+              <div class="progress-bar control-bar" style="width:40%"></div>
+            </div>
+          </div>
+
+          <div class="step-status-list">
+            <div class="step-status done">
+              <span class="status-icon">✓</span>
+              <div><strong>Hasta Okundu</strong><small>Kimlik ve reçete bağlamı hazır</small></div>
+              <span class="mini-ok">Tamam</span>
+            </div>
+            <div class="step-status working">
+              <span class="status-icon loader"></span>
+              <div><strong>İlaç Bilgisi Kontrol Ediliyor</strong><small>İlaç bilgisi ve etken madde okunuyor</small></div>
+              <span class="mini-working">İşleniyor</span>
+            </div>
+            <div class="step-status">
+              <span class="status-icon">3</span>
+              <div><strong>Rapor Değerlendiriliyor</strong><small>Rapor ve uzmanlık bilgileri</small></div>
+              <span class="mini-pending">Bekliyor</span>
+            </div>
+            <div class="step-status">
+              <span class="status-icon">4</span>
+              <div><strong>Sonuç Ekranına Aktarılıyor</strong><small>Kontrol merkezleri güncelleniyor</small></div>
+              <span class="mini-pending">Bekliyor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sgk-control">
+      <div class="container transparency-grid">
+        <div class="transparency-board reveal">
+          <div class="board-head">
+            <div>
+              <span class="micro-label">KONTROL SONUÇLARI</span>
+              <h3>Şeffaf Sonuç Merkezi</h3>
+            </div>
+            <span class="board-badge">Canlı</span>
+          </div>
+
+          <div class="result-row">
+            <div class="result-dot success"></div>
+            <div>
+              <strong>UYGUN</strong>
+              <p>Tüm gerekli kontrol verileri doğrulandı.</p>
+            </div>
+            <span class="result-tag success">Doğrulandı</span>
+          </div>
+          <div class="result-row">
+            <div class="result-dot warning"></div>
+            <div>
+              <strong>UYARI</strong>
+              <p>Uzmanlık veya tarih kontrolünün gözden geçirilmesi önerilir.</p>
+            </div>
+            <span class="result-tag warning">İncele</span>
+          </div>
+          <div class="result-row">
+            <div class="result-dot waiting"></div>
+            <div>
+              <strong>VERİ BEKLİYOR</strong>
+              <p>Eksik veri varsa sistem sonuç uydurmaz; veri durumunu açıkça gösterir.</p>
+            </div>
+            <span class="result-tag waiting">Bekliyor</span>
+          </div>
+          <div class="result-row">
+            <div class="result-dot danger"></div>
+            <div>
+              <strong>KONTROL GEREKLİ</strong>
+              <p>Manuel müdahale veya düzeltme gereken durum.</p>
+            </div>
+            <span class="result-tag danger">Kontrol</span>
+          </div>
+        </div>
+
+        <div class="section-heading left reveal delay-1">
+          <span class="section-kicker">ŞEFFAFLIK & VERİ BÜTÜNLÜĞÜ</span>
+          <h2>Reçete Kontrolünü Daha Düzenli ve Şeffaf Yönetin.</h2>
+          <p>ECZSGK'nın temel yaklaşımı; eksik, okunamayan veya doğrulanamayan veriyi gizlemek yerine açıkça göstermektir. Veri yoksa “uygun” varsayımı yapılmaz.</p>
+
+          <div class="principle-card">
+            <span class="principle-icon">◉</span>
+            <div>
+              <strong>Tahmin değil, durum bilgisi.</strong>
+              <p>Kontrol ekranında neyin doğrulandığı ve hangi verinin beklediği açıkça görünür.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="section-kicker">DETAYLI ANALİZ</span>
+          <h2>İlaç ve Rapor Bilgilerini Tek Bakışta Görün.</h2>
+          <p>Kritik reçete verilerini ayrı ayrı aramak yerine, okunabilir kartlar ve durum etiketleriyle aynı akış içinde değerlendirin.</p>
+        </div>
+
+        <div class="analysis-grid">
+          <div class="analysis-card reveal">
+            <div class="analysis-head">
+              <div class="icon-box green">✚</div>
+              <div>
+                <span class="micro-label">İLAÇ BİLGİLERİ</span>
+                <h3>İlaç Analiz Kartı</h3>
+              </div>
+              <span class="status-pill success">UYGUN</span>
+            </div>
+
+            <div class="detail-table">
+              <div><span>İlaç Adı</span><strong>XXXXXXXX 20 MG</strong></div>
+              <div><span>Etken Madde</span><strong>Örnek Etken Madde</strong></div>
+              <div><span>Rapor Şartı</span><strong>Var</strong></div>
+              <div><span>Kontrol Sonucu</span><strong class="text-green">Kriterler sağlandı</strong></div>
+            </div>
+          </div>
+
+          <div class="analysis-card reveal delay-1">
+            <div class="analysis-head">
+              <div class="icon-box indigo">▧</div>
+              <div>
+                <span class="micro-label">RAPOR & UZMANLIK</span>
+                <h3>Rapor Kontrol Kartı</h3>
+              </div>
+              <span class="status-pill waiting">AKTİF</span>
+            </div>
+
+            <div class="detail-table">
+              <div><span>Rapor No</span><strong>RP-2026-10482</strong></div>
+              <div><span>Tarih Aralığı</span><strong>01.06.2026 — 01.06.2027</strong></div>
+              <div><span>Tanı / ICD-10</span><strong>I10 / Örnek tanı</strong></div>
+            </div>
+
+            <div class="speciality-wrap">
+              <span>Kardiyoloji</span>
+              <span>Göğüs Hastalıkları</span>
+              <span>Endokrinoloji</span>
+              <span>Dahiliye</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="renewal">
+      <div class="container renewal-grid">
+        <div class="section-heading left reveal">
+          <span class="section-kicker">AKILLI YENİLEME TAKİBİ</span>
+          <h2>İlacın Ne Zaman Yenilenebileceğini Net Takip Edin.</h2>
+          <p>Yenileme hesabı; İlaç-Tedavi Geçmişi içindeki “Verilebileceği Tarih” bilgisi üzerinden yürütülür. Böylece hesaplama kaynağı açık ve izlenebilir kalır.</p>
+
+          <div class="logic-note">
+            <div class="logic-formula">
+              <span>Verilebileceği Tarih</span>
+              <strong>24.10.2026</strong>
+            </div>
+            <div class="formula-arrow">− 15 gün</div>
+            <div class="logic-formula accent">
+              <span>ECZSGK Yenileme Takip Tarihi</span>
+              <strong>09.10.2026</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-card reveal delay-1">
+          <div class="timeline-head">
+            <div>
+              <span class="micro-label">YENİLEME MERKEZİ</span>
+              <h3>Yaklaşan Yenilemeler</h3>
+            </div>
+            <span class="board-badge">3 kayıt</span>
+          </div>
+
+          <div class="timeline-row">
+            <div class="timeline-dot success"></div>
+            <div class="timeline-person">
+              <strong>Ayşe Yılmaz</strong>
+              <span>İlaç: XXXX</span>
+            </div>
+            <div class="timeline-status success">105 Gün Kaldı</div>
+          </div>
+
+          <div class="timeline-row">
+            <div class="timeline-dot warning"></div>
+            <div class="timeline-person">
+              <strong>Mehmet Demir</strong>
+              <span>İlaç: YYYY</span>
+            </div>
+            <div class="timeline-status warning">15 Gün Kaldı</div>
+          </div>
+
+          <div class="timeline-row">
+            <div class="timeline-dot danger"></div>
+            <div class="timeline-person">
+              <strong>Fatma Kaya</strong>
+              <span>İlaç: ZZZZ</span>
+            </div>
+            <div class="timeline-status danger">Süresi Doldu</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trust-section" id="security">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="section-kicker">GÜVEN & GÜVENLİK</span>
+          <h2>Eczane Operasyonuna Yakışan Kurumsal Yaklaşım.</h2>
+          <p>Yetkilendirme, veri bütünlüğü, işlem şeffaflığı ve güvenli kullanım prensiplerini ürün deneyiminin merkezine yerleştirin.</p>
+        </div>
+
+        <div class="trust-badges">
+          <div class="trust-badge-card reveal">
+            <div class="trust-badge-icon">🛡</div>
+            <strong>KVKK Odaklı</strong>
+            <span>Veri işleme ve erişim tasarımında gizlilik prensibi</span>
+          </div>
+          <div class="trust-badge-card reveal delay-1">
+            <div class="trust-badge-icon">🔒</div>
+            <strong>Güvenli İletişim</strong>
+            <span>TLS/SSL tabanlı güvenli erişim için uygun mimari</span>
+          </div>
+          <div class="trust-badge-card reveal delay-2">
+            <div class="trust-badge-icon">⚡</div>
+            <strong>MEDULA İş Akışı Uyumlu</strong>
+            <span>Eczane kullanım pratiklerine göre tasarlanmış kontrol akışı</span>
+          </div>
+        </div>
+
+        <p class="legal-note reveal">
+          Not: “KVKK uyumlu”, sertifikasyon, şifreleme seviyesi veya resmi MEDULA uygunluğu gibi kesin pazarlama beyanları yalnızca teknik/hukuki olarak doğrulanmışsa yayınlanmalıdır.
+        </p>
+      </div>
+    </section>
+
+
+    <section class="section pricing-section" id="pricing">
+      <div class="pricing-glow"></div>
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="section-kicker">TEK PAKET • TÜM ÖZELLİKLER</span>
+          <h2>ECZSGK Yıllık Lisans</h2>
+          <p>Ek modül ücreti olmadan tüm ECZSGK özelliklerini tek yıllık paket altında kullanın.</p>
+        </div>
+
+        <div class="pricing-card reveal">
+          <div class="pricing-ribbon">YILLIK KAMPANYA</div>
+          <div class="pricing-main">
+            <div class="pricing-copy">
+              <span class="pricing-label">1 YILLIK • TÜM HİZMETLER AÇIK</span>
+              <h3>ECZSGK Tam Paket</h3>
+              <p>SGK kontrol, Akıllı Kontrol, rapor ve ilaç analizi, yenileme takibi, hasta merkezi ve mevcut tüm ana özellikler tek pakette.</p>
+              <div class="pricing-badges">
+                <span>✓ Tüm modüller</span>
+                <span>✓ 12 ay kullanım</span>
+                <span>✓ Güncellemeler</span>
+                <span>✓ Teknik destek</span>
+              </div>
+            </div>
+
+            <div class="price-box">
+              <div class="old-price">4.500 ₺</div>
+              <div class="new-price"><span>2.799</span> ₺</div>
+              <div class="price-period">1 yıl / tüm hizmetler</div>
+              <div class="saving-badge">1.701 ₺ avantaj</div>
+              <button class="btn btn-primary btn-xl demo-trigger" type="button">Bu Fiyatla Demo Al</button>
+              <a class="price-whatsapp" href="https://wa.me/905387883600?text=Merhaba%2C%20ECZSGK%202.799%20TL%20y%C4%B1ll%C4%B1k%20paket%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp'tan fiyatı sor</a>
+              <a class="price-detail-link" href="fiyatlar.html">Detaylı fiyat sayfasını aç →</a>
+              <small>Kredi kartı gerekmeden önce demo talebi oluşturabilirsiniz.</small>
+            </div>
+          </div>
+
+          <div class="pricing-urgency">
+            <div><strong>İlk SGK kesintinizi yaşamadan önce</strong><span>sisteminizi demo ile test edin.</span></div>
+            <div class="pricing-urgency-mark">ECZSGK</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="faq">
+      <div class="container faq-grid">
+        <div class="section-heading left reveal">
+          <span class="section-kicker">SIK SORULAN SORULAR</span>
+          <h2>ECZSGK Hakkında Merak Edilenler.</h2>
+          <p>Ürünün çalışma yaklaşımı, veri şeffaflığı ve kurulum mantığı hakkında temel sorular.</p>
+        </div>
+
+        <div class="faq-list reveal delay-1">
+          <div class="faq-item active">
+            <button class="faq-question">
+              <span>ECZSGK MEDULA ile nasıl entegre çalışır?</span>
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>ECZSGK, eczane iş akışı içerisinde gerekli MEDULA ekranlarından okunabilen verileri merkezi bir kontrol akışında değerlendirerek reçete, ilaç, rapor ve yenileme bilgilerini ilgili modüllere taşır.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Sistem eksik verilerde nasıl tepki verir?</span>
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Eksik veya okunamayan bir veri varsa sistem bunu “Veri Bekliyor” gibi açık bir durumla gösterir. Eksik veri üzerinden “uygun” sonucu varsaymama prensibi öne çıkar.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Eczane personelimiz için kurulum ne kadar sürer?</span>
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Kurulum süresi kullanılan altyapı, cihaz yapısı ve gerekli yetkilendirmelere göre değişir. Kurulum akışı, mümkün olduğunca yönlendirmeli ve adım adım ilerleyecek şekilde tasarlanabilir.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section contact-choice-section" id="contact">
+      <div class="container">
+        <div class="contact-choice reveal">
+          <div class="contact-choice-copy">
+            <span class="section-kicker">HIZLI İLETİŞİM</span>
+            <h2>ECZSGK'yı Görmek İçin Uzun Formlar Yok.</h2>
+            <p>Demo talebi için yalnızca adınız ve eczane adınız yeterli. Telefon numaranızı girin; isterseniz doğrudan WhatsApp'tan da yazabilirsiniz.</p>
+          </div>
+          <div class="contact-choice-actions">
+            <button type="button" class="btn btn-primary btn-xl demo-trigger">Demo Al</button>
+            <a class="btn btn-whatsapp btn-xl" href="https://wa.me/905387883600?text=Merhaba%2C%20ECZSGK%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">
+              WhatsApp
+            </a>
+            <a class="btn btn-call btn-xl" href="tel:+905387883600">
+              Ara: 0538 788 36 00
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta-section" id="final-cta">
+      <div class="final-glow"></div>
+      <div class="container final-cta reveal">
+        <div>
+          <span class="final-kicker">1 YIL • 2.799 ₺</span>
+          <h2>SGK Kontrol Süreçlerinizi Tek Paketle Akıllandırın.</h2>
+          <p>Reçete, rapor, ilaç ve yenileme kontrollerini daha görünür, daha sistematik ve daha yönetilebilir bir akışta birleştirin.</p>
+        </div>
+        <button type="button" class="btn btn-primary btn-xl demo-trigger">
+          Ücretsiz Demo Al
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#top" class="brand footer-brand">
+          <span class="brand-mark">
+            <svg viewBox="0 0 56 56" aria-hidden="true">
+              <path d="M28 3.5 47 10v15.6c0 12.3-7.6 21.6-19 27-11.4-5.4-19-14.7-19-27V10L28 3.5Z" fill="#02983E"/>
+              <rect x="24" y="14" width="8" height="28" rx="2.4" fill="#fff"/>
+              <rect x="14" y="24" width="28" height="8" rx="2.4" fill="#fff"/>
+            </svg>
+          </span>
+          <span class="brand-text">ECZ<span>SGK</span></span>
+        </a>
+        <p>Akıllı SGK & MEDULA reçete kontrol yardımcısı.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#features">Özellikler</a>
+        <a href="#workflow">Nasıl Çalışır?</a>
+        <a href="#security">Güvenlik</a>
+        <a href="#pricing">Fiyatlandırma</a>
+        <a href="#faq">SSS</a>
+      </div>
+
+      <div class="footer-links">
+        <a href="#">KVKK</a>
+        <a href="#">Gizlilik Politikası</a>
+        <a href="#">Kullanım Koşulları</a>
+        <a href="https://wa.me/905387883600" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="tel:+905387883600">0538 788 36 00</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 ECZSGK. Tüm hakları saklıdır.</span>
+      <span>Türkiye'deki eczaneler için tasarlanmıştır.</span>
+    </div>
+  </footer>
+
+
+  <div class="floating-contact" aria-label="Hızlı iletişim">
+    <a class="float-action float-whatsapp" href="https://wa.me/905387883600?text=Merhaba%2C%20ECZSGK%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" aria-label="WhatsApp ile iletişim">
+      <span class="float-icon">WA</span>
+      <span class="float-label">WhatsApp</span>
+    </a>
+    <a class="float-action float-call" href="tel:+905387883600" aria-label="Telefon ile ara">
+      <span class="float-icon">☎</span>
+      <span class="float-label">Ara</span>
+    </a>
+  </div>
+
+  <div class="demo-modal" id="demoModal" aria-hidden="true">
+    <div class="demo-backdrop" data-close-demo></div>
+    <div class="demo-dialog" role="dialog" aria-modal="true" aria-labelledby="demoTitle">
+      <button class="demo-close" type="button" data-close-demo aria-label="Kapat">×</button>
+
+      <div class="demo-dialog-head">
+        <div class="demo-mini-badge">ECZSGK DEMO</div>
+        <h2 id="demoTitle">30 saniyede demo talebinizi bırakın.</h2>
+        <p>Uzun kayıt yok. Sadece gerekli bilgileri alın ve doğrudan iletişime geçin.</p>
+      </div>
+
+      <form id="demoForm" class="demo-form" novalidate>
+        <div class="form-row">
+          <label for="demoName">Ad Soyad <span>*</span></label>
+          <input id="demoName" name="name" type="text" autocomplete="name" placeholder="Örn. Ahmet Yılmaz" required />
+          <small class="field-error" data-error-for="demoName"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="demoPharmacy">Eczane Adı <span>*</span></label>
+          <input id="demoPharmacy" name="pharmacy" type="text" autocomplete="organization" placeholder="Örn. Kiraz Eczanesi" required />
+          <small class="field-error" data-error-for="demoPharmacy"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="demoPhone">Telefon <span>*</span></label>
+          <div class="phone-field">
+            <span class="phone-prefix">+90</span>
+            <input id="demoPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="5xx xxx xx xx" required />
+          </div>
+          <small class="field-error" data-error-for="demoPhone"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="demoEmail">E-posta <em>isteğe bağlı</em></label>
+          <input id="demoEmail" name="email" type="email" autocomplete="email" placeholder="eczane@ornek.com" />
+          <small class="field-error" data-error-for="demoEmail"></small>
+        </div>
+
+        <button class="btn btn-primary btn-xl demo-submit" type="submit">
+          WhatsApp'tan Demo Talebi Gönder
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+
+        <p class="form-privacy">Bilgileriniz yalnızca demo iletişimi için kullanılır. Gönderim WhatsApp üzerinden sizin onayınızla gerçekleşir.</p>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="activity-toast" id="activityToast" aria-live="polite" aria-atomic="true">
+    <button class="activity-close" id="activityClose" type="button" aria-label="Bildirimi kapat">×</button>
+    <div class="activity-icon" id="activityIcon">●</div>
+    <div class="activity-body">
+      <span class="activity-badge" id="activityBadge">ÖRNEK ETKİNLİK</span>
+      <strong id="activityText">ECZSGK etkinliği</strong>
+      <small id="activityTime">az önce</small>
+    </div>
+  </div>
+
+  <script src="site-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
